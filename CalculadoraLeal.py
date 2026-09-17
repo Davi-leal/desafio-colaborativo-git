@@ -1,0 +1,26 @@
+import os
+
+def limpar_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+print("Bem vindo á Calculadora Leal")
+print("Para iniciarmos, digite 2 números inteiros:  ")
+
+
+while True:
+    try:
+        d1 = int(input(""))
+        break
+    except ValueError:
+        print("Aviso! Entrada inválida! Por favor, digite apenas valores inteiros!: ")
+while True:
+    try:
+        d2 = int (input(""))
+        break
+    except ValueError:
+        print("Aviso! Entrada inválida! Por favor, digite apenas valores inteiros!: ")
+
+limpar_terminal()
+
+print(f"{d1, d2} Perfeito!\nAgora, selecione uma das opções a baixo:")
+
